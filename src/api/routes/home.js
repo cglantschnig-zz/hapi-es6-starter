@@ -1,4 +1,7 @@
-
+/**
+ * Define routes the way you are used to. Also use Joi Schemas to validate the
+ * input and output
+ */
 var routes = [
   {
     method: 'GET',

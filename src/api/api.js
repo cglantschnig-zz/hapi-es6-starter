@@ -1,15 +1,18 @@
 import Hapi from 'hapi';
-import Promise from 'bluebird';
-import {union, values} from 'lodash';
+import { union, values } from 'lodash';
+import config from '../shared/config';
 
 var server = new Hapi.Server();
 server.connection({
-  port: 3000
+  host: config.host,
+  port: config.port
 });
 
-var routes = require('require-dir')('./routes');
-var rr = union.apply(null, values(routes));
-server.route(rr);
+// set all routes which are located in the routes directory
+var unformatedRoutes = require('require-dir')('./routes');
+var routes = union(...values(unformatedRoutes));
+
+server.route(routes);
 
 server.register(require('./plugins'), function (err) {
   if (err) {
@@ -22,4 +25,3 @@ server.register(require('./plugins'), function (err) {
 });
 
 export default server;
-

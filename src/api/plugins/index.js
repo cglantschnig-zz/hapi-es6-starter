@@ -1,3 +1,7 @@
+/**
+ * List of plugins which are about to be installed. Read more at:
+ * http://hapijs.com/tutorials/plugins
+ */
 var pluginList = [
   {
     register: require('good'),
@@ -10,5 +14,6 @@ var pluginList = [
     }
   }
 ];
+
 
 export default pluginList;

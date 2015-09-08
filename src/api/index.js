@@ -16,4 +16,4 @@ require('babel/register');
  * exports return an object with the given name. Your default export goes to obj.default
  * in this case the Api is calling itself
  */
-require('./Api');
+require('./api');
