@@ -1,6 +1,6 @@
 {
   "name": "hapi-es6-starter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "a startup project with babel/es6",
   "main": "./src/api/index.js",
   "dependencies": {
