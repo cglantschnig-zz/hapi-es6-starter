@@ -9,12 +9,12 @@ RUN yum install -y epel-release git-core
 RUN yum install -y nodejs npm
 
 # copy whole directoy to /server
-COPY . /server
+ADD . /server
 
 WORKDIR /server
 
 # install all dependencies defined in the package.json
-RUN cd /server; npm install
+RUN npm install
 
 EXPOSE 3001
 
