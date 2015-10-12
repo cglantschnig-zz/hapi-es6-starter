@@ -10,12 +10,7 @@ it in the browser on the given IP.
     # docker build -t template .
     # docker run -p 80:3001 --name app -d template
 
-Currently I am using here just single docker containers, but as soon
-[docker-compose](https://github.com/docker/compose) will release the version 1.5.
-This repository is going to use it. Version 1.5 brings support for Windows. You
-could use some custom solutions like described [here](http://stackoverflow.com/questions/29289785/how-to-install-docker-compose-on-windows).
-
-Just follow the [current status of docker-compose](https://github.com/docker/compose/wiki/1.5.0-Milestone-Project-Page)
+Now you can easily view the website at `http://localhost` on your host machine.
 
 ## License
 
