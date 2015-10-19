@@ -13,12 +13,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "source ./scripts/environment.sh && node ./src/api/index.js",
+    "start": "node ./src/api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:cglantschnig/hapi-es6-starter.git"
+  },
+  "devEngines": {
+    "node": "4.x",
+    "npm": "2.x"
   },
   "author": "Christopher Glantschnig",
   "license": "MIT",

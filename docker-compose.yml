@@ -1,0 +1,8 @@
+web:
+  build: .
+  volumes:
+    - "./src:/server/src"
+  ports:
+    - "3000:3000"
+  env_file:
+    - "./scripts/environment.env"
